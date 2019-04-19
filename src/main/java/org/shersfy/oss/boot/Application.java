@@ -157,7 +157,10 @@ public class Application extends JFrame implements ActionListener{
 		txtInputPath.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				JFileChooser chooser = new JFileChooser();
+				String current = txtInputPath.getText();
+				current = "...".equals(current)?null:current;
+				
+				JFileChooser chooser = new JFileChooser(current);
 				chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 				chooser.showDialog(new JLabel(), "选择文件或目录");
 				if (chooser.getSelectedFile()!=null) {
