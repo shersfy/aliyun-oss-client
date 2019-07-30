@@ -48,8 +48,8 @@ public class Application extends JFrame implements ActionListener{
 	private static final int MARGIN_TOP  = 20;
 	private static final int TXT_LEN  	 = 18;
 	
-	private static final String endPoint 		= "http://oss-cn-beijing.aliyuncs.com";
-	private static final String accessKeyId		= "LTAIYNlyYMVaDSOt";
+	private static final String endPoint 		= "";
+	private static final String accessKeyId		= "";
 	private static final String secretAccessKey	= "";
 	private static final String bucket			= "";
 
